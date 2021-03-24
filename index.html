@@ -35,16 +35,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+var docMod = document.lastModified; // loads last modified time stamp into docMod variable // DANA'S COMMENT - so this section has been given by Dr.Riedel to help me outline
+alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line. // DANA'S COMMENT - will keep this in mind when trying to test if it will work
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. // DANA'S COMMENT - was a little confused about the purpose of this, but remebemered from codeacaemdy the console.log function
 </script>
-
 
 
 <style>	
 .body {
-     margin: 0em;
+     margin: 0em; /* this will help me uncover the dimensions of my image */ 
 }
 .page {
     width: 100vw;
@@ -54,14 +53,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     left: -100vw;
     overflow-y: auto;
     z-index: 0;
-    background-color: hsl(0,0%,100%);
+    background-color: hsl(0,0%,100%);/* remember seeing some of this notation from one of the app assignments /* 
 }
   .page:target {
     left: 0vw;
     z-index: 1;
 }
 </style>
-
+	
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>App6---HTML5-Canvas</h1>

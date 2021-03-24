@@ -35,17 +35,26 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-var docMod = document.lastModified; // loads last modified time stamp into docMod variable // DANA'S COMMENT - so this section has been given by Dr.Riedel to help me outline
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line. // DANA'S COMMENT - will keep this in mind when trying to test if it will work
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. // DANA'S COMMENT - was a little confused about the purpose of this, but remebemered from codeacaemdy the console.log function
+var docMod = document.lastModified; // loads last modified time stamp into docMod variable 
+// DANA'S COMMENT - so this section has been given by Dr.Riedel to help me outline
+alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line. 
+// DANA'S COMMENT - will keep this in mind when trying to test if it will work
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+// DANA'S COMMENT - was a little confused about the purpose of this, but remebemered from codeacaemdy the console.log function
+
+// DANA'S COMMENT - so to summarize essentially this section generates the alert box to indicate when the page was last modified, need to remember this for future use
+	
 </script>
 
-
+	
 <style>	
 .body {
-     margin: 0em; /* this will help me uncover the dimensions of my image */ 
+     margin: 0em; /* DANA'S COMMENT - this will help me uncover the dimensions of my image */ 
 }
 .page {
+	/* DANA'S COMMENT goal of this assignment is to create HTML5 drawing canvas and IMPORTANT NOTE: IT MUST FIT ON MY IPHONE (this means I will have to adjust the dimensions,
+	not sure exactly how to test this some possible ideas are to send the link to myself so I can open it from my phone and test to see which dimensions produced the best 
+	fit for an iphone (as the computer would obviosoly have much different dimensions */ 
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -53,7 +62,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     left: -100vw;
     overflow-y: auto;
     z-index: 0;
-    background-color: hsl(0,0%,100%);/* remember seeing some of this notation from one of the app assignments /* 
+    background-color: hsl(0,0%,100%);/* DANA'S COMMENT - remember seeing some of this notation from one of the app assignments /* 
 }
   .page:target {
     left: 0vw;

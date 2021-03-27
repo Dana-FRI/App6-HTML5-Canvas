@@ -46,7 +46,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 function draw_b() { // function which allows to create the rectangle
  	 var b_canvas = document.getElementById("b");
  	 var b_context = b_canvas.getContext("2d");
-	 b_context.fillRect(20, 20, 40, 60); // codes for the size of the rectangle - I've changed it to smaller numbers phone phone setting
+	 b_context.fillRect(15, 15, 30, 50); // codes for the size of the rectangle - I've changed it to smaller numbers phone phone setting
 }
 	
 function draw_b() {
@@ -59,6 +59,12 @@ function draw_b() {
 	 var b_canvas = document.getElementById("b");
   	 var b_context = b_canvas.getContext("2d");
 	 b_context.draw_image(img, 100, 100, 100, 100);
+}
+	
+function draw_b() {
+	 var b_canvas = document.getElementById("b");
+  	 var b_context = b_canvas.getContext("2d");
+	 b_context.clearRect(1, 1, 200, 200);
 }
 </script>
 

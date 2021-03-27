@@ -43,28 +43,28 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 // DANA'S COMMENT - was a little confused about the purpose of this, but remebemered from codeacaemdy the console.log function
 // DANA'S COMMENT - so to summarize essentially this section generates the alert box to indicate when the page was last modified, need to remember this for future use
 
-function draw_b() { // function which allows to create the rectangle
- 	 var b_canvas = document.getElementById("b");
- 	 var b_context = b_canvas.getContext("2d");
-	 b_context.fillRect(15, 15, 30, 50); // codes for the size of the rectangle - I've changed it to smaller numbers phone phone setting
+function draw_a() { // function which allows to create the rectangle
+ 	 var a_canvas = document.getElementById("a");
+ 	 var a_context = a_canvas.getContext("2d");
+	 a_context.fillRect(15, 15, 30, 50); // codes for the size of the rectangle - I've changed it to smaller numbers phone phone setting
 }
 	
 function draw_b() {
-	 var b_canvas = document.getElementById("b");
+	 var b_canvas = document.getElementById("a");
   	 var b_context = b_canvas.getContext("2d");
 	 b_context.fillText("Dana Selim", 50, 80);
 }
 	
-function draw_b() {
-	 var b_canvas = document.getElementById("b");
-  	 var b_context = b_canvas.getContext("2d");
-	 b_context.draw_image(img, 100, 100, 100, 100);
+function draw_c() {
+	 var c_canvas = document.getElementById("a");
+  	 var c_context = c_canvas.getContext("2d");
+	 c_context.draw_image(img, 100, 100, 100, 100);
 }
 	
-function draw_b() {
-	 var b_canvas = document.getElementById("b");
-  	 var b_context = b_canvas.getContext("2d");
-	 b_context.clearRect(1, 1, 200, 200);
+function draw_d() {
+	 var d_canvas = document.getElementById("a");
+  	 var d_context = d_canvas.getContext("2d");
+	 d_context.clearRect(1, 1, 200, 200);
 }
 </script>
 
@@ -102,13 +102,16 @@ function draw_b() {
 		<center><canvas id="a" width="275" height "175" style="border : 1px solid #000000;"></canvas><center>
 			<!-- adds a sheet on the canvas with a border and controls the size of the canvas -->
 			
-		<center><button onclick = "draw_b();">Draw Rectangle</button><center>
+		<center><button onclick = "draw_a();">Draw Rectangle</button><center>
 			<!-- this codes for the rectanle drawing the button, so that it will appear on the screen -->
 	
 		<center><button onclick = "draw_b();">Draw Name</button><center>
 			<!-- codes for the name drawing button -->
 		
-		<center><button onclick = "draw_b();">Clear Canvas</button><center>
+			<!-- include image -->
+			
+			
+		<center><button onclick = "draw_d();">Clear Canvas</button><center>
 			<!-- codes for button to clear canvas -->
 
 	

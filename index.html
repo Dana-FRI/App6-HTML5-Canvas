@@ -43,6 +43,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 // DANA'S COMMENT - was a little confused about the purpose of this, but remebemered from codeacaemdy the console.log function
 // DANA'S COMMENT - so to summarize essentially this section generates the alert box to indicate when the page was last modified, need to remember this for future use
 
+var flower = new Image(); 
+	flower.src = "https://s3-eu-west-1.amazonaws.com/800flower-ae-blog/blog/wp-content/uploads/2018/09/02053624/Cheapest-Flowers-Dubai.jpg";
+	// flower.onload = function() {
+	// context.drawImage
+	
+	
 function draw_a() { // function which allows to create the rectangle
  	 var a_canvas = document.getElementById("a");
  	 var a_context = a_canvas.getContext("2d");
@@ -58,7 +64,7 @@ function draw_b() {
 function draw_c() {
 	 var c_canvas = document.getElementById("a");
   	 var c_context = c_canvas.getContext("2d");
-	 c_context.draw_image(img, 100, 100, 100, 100); 
+	 c_context.draw_image(flower, 100, 100, 100, 100); 
 
 }
 	
@@ -110,11 +116,13 @@ function draw_d() {
 			<!-- codes for the name drawing button -->
 
 			<!-- include image -->
+		<center><button onclick = "draw_c();">Draw Image</button><center>
+
 			
 		<center><button onclick = "draw_d();">Clear Canvas</button><center>
 			<!-- codes for button to clear canvas -->
 			
-		<img src="https://s3-eu-west-1.amazonaws.com/800flower-ae-blog/blog/wp-content/uploads/2018/09/02053624/Cheapest-Flowers-Dubai.jpg" alt="Flower" width="128" height="128">
+		<!-- <img src="https://s3-eu-west-1.amazonaws.com/800flower-ae-blog/blog/wp-content/uploads/2018/09/02053624/Cheapest-Flowers-Dubai.jpg" alt="Flower" width="128" height="128"> -->
 
 						
 	</p>

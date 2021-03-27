@@ -45,8 +45,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 var flower = new Image(); 
 	flower.src = "https://s3-eu-west-1.amazonaws.com/800flower-ae-blog/blog/wp-content/uploads/2018/09/02053624/Cheapest-Flowers-Dubai.jpg";
-	// flower.onload = function() {
-	// context.drawImage
+
+flower.onload = function() {
+	draw_c(flower);
+}
+	
+	
 	
 	
 function draw_a() { // function which allows to create the rectangle

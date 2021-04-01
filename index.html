@@ -36,12 +36,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable 
-// DANA'S COMMENT - so this section has been given by Dr.Riedel to help me outline
+//so this section has been given by Dr.Riedel to help me outline
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line. 
-// DANA'S COMMENT - will keep this in mind when trying to test if it will work
+// will keep this in mind when trying to test if it will work
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
-// DANA'S COMMENT - was a little confused about the purpose of this, but remebemered from codeacaemdy the console.log function
-// DANA'S COMMENT - so to summarize essentially this section generates the alert box to indicate when the page was last modified, need to remember this for future use
+// was a little confused about the purpose of this, but remebemered from codeacaemdy the console.log function
+// so to summarize essentially this section generates the alert box to indicate when the page was last modified, need to remember this for future use
 
 // var flower = new Image(); 
 	// img.src = "https://s3-eu-west-1.amazonaws.com/800flower-ae-blog/blog/wp-content/uploads/2018/09/02053624/Cheapest-Flowers-Dubai.jpg";
@@ -53,18 +53,18 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 
 function draw_a() { // function which allows to create the rectangle
- 	 var a_canvas = document.getElementById("a");
- 	 var a_context = a_canvas.getContext("2d");
-	 a_context.fillRect(15, 15, 30, 50); // codes for the size of the rectangle - I've changed it to smaller numbers phone phone setting
+ 	 var a_canvas = document.getElementById("a"); // allows you to define the variable for the canvas I chose "a" for creating my rectangle canvas
+ 	 var a_context = a_canvas.getContext("2d"); // this part is important to include in each function that has a button with it 
+	 a_context.fillRect(15, 15, 30, 50); // codes for the size of the rectangle - I've changed it to smaller numbers phone phone setting, so the rectangle is 30 by 50
 }
 	
 function draw_b() {
-	 var b_canvas = document.getElementById("a");
-  	 var b_context = b_canvas.getContext("2d");
-	 b_context.fillText("Dana Selim", 50, 80);
+	 var b_canvas = document.getElementById("a"); // this allows the name to be put into the canvas that's defined as "a" 
+  	 var b_context = b_canvas.getContext("2d"); 
+	 b_context.fillText("Dana Selim", 50, 80); // I told the draw function to write my name as Dana Selim, I put this on the x and y coordinate of 50, 80 
 }
 	
-//flower.onload = function draw_c() {
+// commenting out some old code that didn't work - flower.onload = function draw_c() {
 // function draw_c() {
 // flower.onload = function draw_c(flower);
 //flower.onload = function draw_c() {
@@ -75,15 +75,15 @@ function draw_c() {
   	 var c_context = c_canvas.getContext("2d");
 	 var flower = new Image(); 
 	 	flower.src = "https://s3-eu-west-1.amazonaws.com/800flower-ae-blog/blog/wp-content/uploads/2018/09/02053624/Cheapest-Flowers-Dubai.jpg";
-	 c_context.drawImage(flower, 120, 95, 50, 50); 
+	 c_context.drawImage(flower, 120, 95, 50, 50); // took forever but figured out smaller width and length of image fits onto canvas at the coordinate (120,95)
 	// var flower = new Image(); 
-	//  img.src = "https://s3-eu-west-1.amazonaws.com/800flower-ae-blog/blog/wp-content/uploads/2018/09/02053624/Cheapest-Flowers-Dubai.jpg";
+	// img.src = "https://s3-eu-west-1.amazonaws.com/800flower-ae-blog/blog/wp-content/uploads/2018/09/02053624/Cheapest-Flowers-Dubai.jpg";
 }
 	
 function draw_d() {
-	 var d_canvas = document.getElementById("a");
+	 var d_canvas = document.getElementById("a"); // this allows me to clear my canvas
   	 var d_context = d_canvas.getContext("2d");
-	 d_context.clearRect(1, 1, 200, 200);
+	 d_context.clearRect(1, 1, 200, 200); // took out the canvas by creating a big enough dimension 
 }
 </script>
 
